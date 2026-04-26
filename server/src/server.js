@@ -20,3 +20,7 @@ startServer().catch((error) => {
   console.error('Failed to start server', error);
   process.exit(1);
 });
+
+app.get("/", (req, res) => {
+  res.send("Backend is running 🚀");
+});
